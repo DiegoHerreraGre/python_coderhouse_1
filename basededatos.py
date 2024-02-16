@@ -39,7 +39,9 @@ class Database:
 
     def convertToDictionary(self):
         base_dict = {i: info for i, info in enumerate(self.base)}
-        return base_dict
+        return base_dict.pop(0)
+
+    #Para eliminar el residuo que hay en el índice inicial (0) de la lista, se usa el método pop(0)
 
 db = Database()
 db.addInfo()
