@@ -48,3 +48,21 @@ db.addInfo()
 db.showBase()
 base_dict = db.convertToDictionary()
 print(base_dict)
+
+def login():
+    global password
+    print("Bienvenido al sistema de login. 👻")
+    email = input("Ingrese su correo: ")
+    if email in base_dict.values() == True:
+        print("Correo válido. Ahora debe crear una contraseña")
+        password = input("Ingrese su contraseña: ")
+        print("Contraseña creada correctamente. Ahora puede ingresar al sistema.")
+    else:
+        print("Correo inválido. Por favor, ingrese un correo válido 💀")
+        login()
+
+    return email, password
+
+login()
+
+print("¡Bienvenido al sistema! 🥳🥳🥳")
