@@ -9,6 +9,7 @@ class LoginUser:
         self.email = email
         self.password = password
         self.dataUser = []
+        self.dataUserString = []
 
     def adddatainfo(self):
         self.name = input("Ingrese su nombre: ")
@@ -32,6 +33,16 @@ class LoginUser:
             self.dataUser.append(self.password)
 
         return self.dataUser
+
+def __str__(self):
+    dataUserString = (f"Nombre: {self.name}, "
+                      f"Apellido: {self.lastname}, "
+                      f"Teléfono: {self.phone}, "
+                      f"Email: {self.email}, "
+                      f"Contraseña: {self.password}")
+    self.dataUserString.append(dataUserString)
+    print(dataUserString)
+    return dataUserString
 
 
 export = LoginUser
