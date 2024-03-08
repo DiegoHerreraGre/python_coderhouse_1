@@ -15,15 +15,13 @@ cursor.execute("""
 conn.commit()
 conn.close()
 
-correctPassword = lu.password
-
 databasepasswords = []
 
-def addpasswords ():
+def addpasswords (correctPassword=None):
     databasepasswords.append(correctPassword)
     print(databasepasswords)
 
-def checkpassword (n):
+def checkpassword (n, a=None, correctPassword=None):
     n.map(addpasswords)
 
     if correctPassword == a:

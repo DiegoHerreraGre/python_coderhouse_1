@@ -1,4 +1,7 @@
 import LoginUser as lu
+import Checking as cu
+import os
+
 
 print("Bienvenido al ingreso de sus datos. No piense que usaremos esto para estafarlo 🥹")
 
