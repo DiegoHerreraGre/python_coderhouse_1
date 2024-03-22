@@ -1,7 +1,7 @@
 import LoginUser as lu
 import sqlite3
 
-conn = sqlite3.connect('./passwords.sqlite')
+conn = sqlite3.connect('../passwords.sqlite')
 cursor = conn.cursor()
 cursor.execute("""
     CREATE TABLE users (
